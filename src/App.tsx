@@ -10,53 +10,54 @@ export default function App () {
             <img className='logo' src={logo} alt='Splitter' />
 
             <div className='calc'>
-                <section>
-                    <form>
-                        <article>
-                            <label>Bill</label>
-                            <div>
-                                <img src={dollar} alt='dollar $' />
-                                <input type='number' placeholder='0' />
+                <section className='calc__1st-section'>
+                    <form className='calc__1st-section__container'>
+                        <article className='calc__1st-section__bill'>
+                            <label className='calc__1st-section__bill__label'>Bill</label>
+                            <div className='calc__1st-section__bill__container'>
+                                <img className='calc__1st-section__bill__img' src={dollar} alt='dollar $' />
+                                <input className='calc__1st-section__bill__input' type='number' placeholder='0' />
                             </div>
                         </article>
 
-                        <article>
-                            <label>Select Tip %</label>
-                            <button>5%</button>
-                            <button>10%</button>
-                            <button>15%</button>
-                            <button>25%</button>
-                            <button>50%</button>
-                            <input type='number' placeholder='Custom' />
+                        <article className='calc__1st-section__btns__container'>
+                            <label className='calc__1st-section__btns__label'>Select Tip %</label>
+                            <button className='calc__1st-section__btn'>5%</button>
+                            <button className='calc__1st-section__btn'>10%</button>
+                            <button className='calc__1st-section__btn'>15%</button>
+                            <button className='calc__1st-section__btn'>50%</button>
+                            <button className='calc__1st-section__btn'>25%</button>
+                            <input className='calc__1st-section__btns__input' type='number' placeholder='Custom' />
                         </article>
 
-                        <article>
-                            <label>Number of People</label>
-                            <div>
-                                <img src={person} alt='person icon' />
-                                <input type='number' placeholder='0' />
+                        <article className='calc__1st-section__numofpeople'>
+                            <label className='calc__1st-section__numofpeople__label'>Number of People</label>
+                            <div className='calc__1st-section__numofpeople__container'>
+                                <img className='calc__1st-section__numofpeople__img' src={person} alt='person icon' />
+                                <input className='calc__1st-section__numofpeople__input' type='number' placeholder='0' />
                             </div>
                         </article>
                     </form>
                 </section>
-                <section>
-                    <div>
-                        <article>
-                            <div>
-                                <h5>Tip amount</h5>
-                                <p>/ person</p>
+
+                <section className='calc__2nd-section'>
+                    <div className='calc__2nd-section__container'>
+                        <article className='calc__2nd-section__bill'>
+                            <div className='calc__2nd-section__bill__container'>
+                                <h5 className='calc__2nd-section_bill__title'>Tip amount</h5>
+                                <p className='calc__2nd-section__bill__p'>/ person</p>
                             </div>
-                            <h1>$0.00</h1>
+                            <h1 className='calc__2nd-section__bill__result'>$0.00</h1>
                         </article>
-                        <article>
-                            <div>
-                                <h5>Total</h5>
-                                <p>/ person</p>
+                        <article className='calc__2nd-section__bill'>
+                            <div className='calc__2nd-section__bill__container'>
+                                <h5 className='calc__2nd-section_bill__title'>Total</h5>
+                                <p className='calc__2nd-section__bill__p'>/ person</p>
                             </div>
-                            <h1>$0.00</h1>
+                            <h1 className='calc__2nd-section__bill__result'>$0.00</h1>
                         </article>
                     </div>
-                    <button>Reset</button>
+                    <button className='calc__2nd-section__btn'>Reset</button>
                 </section>
             </div>
         </main>
