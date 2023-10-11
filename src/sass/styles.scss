@@ -27,3 +27,76 @@ body {
     display: flex;
     gap: 30px;
 }
+
+/* 1st section */
+
+.calc__1st-section {
+    width: 50%;
+}
+
+.calc__1st-section__btns__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.calc__1st-section__bill__label {
+    font-size: 13px;
+    color: variables.$darkGrayishCyan;
+    font-weight: 600;
+}
+
+.calc__1st-section__bill__container {
+    border: 1px solid #ccc;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calc__1st-section__bill__input {
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: variables.$veryDarkCyan;
+    text-align: right;
+}
+
+.calc__1st-section__bill__input:active {
+    border: 1px solid #ffffffff;
+    background-color: #000;
+}
+
+.calc__1st-section__bill__img {
+    width: 10px;
+    height: 12px;
+    margin-left: 12px;
+}
+
+.calc__1st-section__btns__label {
+    grid-column: 1 / 4;
+    font-size: 13px;
+    color: variables.$darkGrayishCyan;
+    font-weight: 600;
+}
+
+.calc__1st-section__numofpeople__label {
+    color: variables.$darkGrayishCyan;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* 2nd section */
+
+.calc__2nd-section{
+    background-color: variables.$veryDarkCyan;
+    width: 50%;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.calc__2nd-section__bill {
+    display: flex;
+    justify-content: space-between;
+}

@@ -16,17 +16,17 @@ export default function App () {
                             <label className='calc__1st-section__bill__label'>Bill</label>
                             <div className='calc__1st-section__bill__container'>
                                 <img className='calc__1st-section__bill__img' src={dollar} alt='dollar $' />
-                                <input className='calc__1st-section__bill__input' type='number' placeholder='0' />
+                                <input className='calc__1st-section__bill__input' type='number' placeholder='0' required />
                             </div>
                         </article>
 
                         <article className='calc__1st-section__btns__container'>
                             <label className='calc__1st-section__btns__label'>Select Tip %</label>
-                            <button className='calc__1st-section__btn'>5%</button>
-                            <button className='calc__1st-section__btn'>10%</button>
-                            <button className='calc__1st-section__btn'>15%</button>
-                            <button className='calc__1st-section__btn'>50%</button>
-                            <button className='calc__1st-section__btn'>25%</button>
+                            <button type='button' className='calc__1st-section__btn'>5%</button>
+                            <button type='button' className='calc__1st-section__btn'>10%</button>
+                            <button type='button' className='calc__1st-section__btn'>15%</button>
+                            <button type='button' className='calc__1st-section__btn'>50%</button>
+                            <button type='button' className='calc__1st-section__btn'>25%</button>
                             <input className='calc__1st-section__btns__input' type='number' placeholder='Custom' />
                         </article>
 
@@ -34,7 +34,7 @@ export default function App () {
                             <label className='calc__1st-section__numofpeople__label'>Number of People</label>
                             <div className='calc__1st-section__numofpeople__container'>
                                 <img className='calc__1st-section__numofpeople__img' src={person} alt='person icon' />
-                                <input className='calc__1st-section__numofpeople__input' type='number' placeholder='0' />
+                                <input className='calc__1st-section__numofpeople__input' type='number' placeholder='0' required />
                             </div>
                         </article>
                     </form>
