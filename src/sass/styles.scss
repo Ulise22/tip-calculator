@@ -54,24 +54,33 @@ body {
     justify-content: space-between;
 }
 
+.calc__1st-section__bill {
+    display: flex;
+    flex-direction: column;
+}
+
 .calc__1st-section__bill__input {
     border: none;
+    background-image: url('../assets/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: left;
+    background-position-x: 14px;
+    padding: 6px;
+    padding-left: 30px;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1.5px;
     color: variables.$veryDarkCyan;
+    background-color: variables.$veryLightGrayishCyan;
     text-align: right;
-}
-
-.calc__1st-section__bill__input:active {
+    border-radius: 4px;
     border: 1px solid #ffffffff;
-    background-color: #000;
 }
 
-.calc__1st-section__bill__img {
-    width: 10px;
-    height: 12px;
-    margin-left: 12px;
+.calc__1st-section__bill__input:focus {
+    outline: none;
+    border: 1px solid variables.$strongCyan;
 }
 
 .calc__1st-section__btns__label {

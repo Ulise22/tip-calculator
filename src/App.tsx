@@ -14,10 +14,7 @@ export default function App () {
                     <form className='calc__1st-section__container'>
                         <article className='calc__1st-section__bill'>
                             <label className='calc__1st-section__bill__label'>Bill</label>
-                            <div className='calc__1st-section__bill__container'>
-                                <img className='calc__1st-section__bill__img' src={dollar} alt='dollar $' />
-                                <input className='calc__1st-section__bill__input' type='number' placeholder='0' required />
-                            </div>
+                            <input className='calc__1st-section__bill__input' type='number' placeholder='0' required />
                         </article>
 
                         <article className='calc__1st-section__btns__container'>
