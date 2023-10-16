@@ -31,12 +31,6 @@ body {
   width: 50%;
 }
 
-.calc__1st-section__btns__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
 .calc__1st-section__bill__label {
   font-size: 13px;
   color: hsl(186, 14%, 43%);
@@ -56,6 +50,10 @@ body {
   flex-direction: column;
 }
 
+.calc__1st-section__bill__input::placeholder {
+  color: hsla(186, 14%, 43%, 0.333);
+}
+
 .calc__1st-section__bill__input {
   border: none;
   background-image: url("../assets/icon-dollar.svg");
@@ -72,12 +70,19 @@ body {
   background-color: hsl(189, 41%, 97%);
   text-align: right;
   border-radius: 4px;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 .calc__1st-section__bill__input:focus {
   outline: none;
-  border: 1px solid hsl(172, 67%, 45%);
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.calc__1st-section__btns__container {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .calc__1st-section__btns__label {
@@ -85,6 +90,47 @@ body {
   font-size: 13px;
   color: hsl(186, 14%, 43%);
   font-weight: 600;
+}
+
+.calc__1st-section__btn {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 0;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.calc__1st-section__btn:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  transition: all 0.2s ease;
+}
+
+.calc__1st-section__btns__input::placeholder {
+  color: hsla(183, 100%, 15%, 0.553);
+  text-align: center;
+}
+
+.calc__1st-section__btns__input {
+  width: calc(100% - 8px);
+  text-align: right;
+  border-radius: 6px;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(183, 100%, 15%);
+  border: 2px solid white;
+}
+
+.calc__1st-section__btns__input:focus {
+  outline: none;
+  border: 2px solid hsl(172, 67%, 45%);
 }
 
 .calc__1st-section__numofpeople__label {

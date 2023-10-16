@@ -34,12 +34,6 @@ body {
     width: 50%;
 }
 
-.calc__1st-section__btns__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
 .calc__1st-section__bill__label {
     font-size: 13px;
     color: variables.$darkGrayishCyan;
@@ -59,6 +53,10 @@ body {
     flex-direction: column;
 }
 
+.calc__1st-section__bill__input::placeholder {
+    color: hsla(186, 14%, 43%, 0.333);;
+}
+
 .calc__1st-section__bill__input {
     border: none;
     background-image: url('../assets/icon-dollar.svg');
@@ -75,12 +73,19 @@ body {
     background-color: variables.$veryLightGrayishCyan;
     text-align: right;
     border-radius: 4px;
-    border: 1px solid #ffffffff;
+    border: 2px solid #ffffffff;
 }
 
 .calc__1st-section__bill__input:focus {
     outline: none;
-    border: 1px solid variables.$strongCyan;
+    border: 2px solid variables.$strongCyan;
+}
+
+.calc__1st-section__btns__container {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .calc__1st-section__btns__label {
@@ -88,6 +93,47 @@ body {
     font-size: 13px;
     color: variables.$darkGrayishCyan;
     font-weight: 600;
+}
+
+.calc__1st-section__btn {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: variables.$veryDarkCyan;
+    color: variables.$white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 0;
+    border-radius: 6px;
+    transition: all .2s ease;
+}
+
+.calc__1st-section__btn:hover {
+    background-color: variables.$strongCyan;
+    color: variables.$veryDarkCyan;
+    transition: all .2s ease;
+}
+
+.calc__1st-section__btns__input::placeholder {
+    color: hsla(183, 100%, 15%, 0.553);
+    text-align: center;
+}
+
+.calc__1st-section__btns__input {
+    width: calc(100% - 8px);
+    text-align: right;
+    border-radius: 6px;
+    border: none;
+    background-color: variables.$veryLightGrayishCyan;
+    font-size: 18px;
+    font-weight: 600;
+    color: variables.$veryDarkCyan;
+    border: 2px solid #ffffffff;
+}
+
+.calc__1st-section__btns__input:focus {
+    outline: none;
+    border: 2px solid variables.$strongCyan;
 }
 
 .calc__1st-section__numofpeople__label {
